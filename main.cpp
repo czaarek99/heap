@@ -1,6 +1,12 @@
 #include <iostream>
+#include "PriorityQueue/PriorityQueue.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    PriorityQueue queue;
+
+    entry e = queue.pop();
+
+    std::cout << e.value << std::endl;
+
     return 0;
 }
